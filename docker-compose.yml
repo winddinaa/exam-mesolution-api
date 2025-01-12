@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: 1234
       POSTGRES_DB: me_solution_task
     ports:
-      - '5432:5432'
+      - '5433:5432'
     volumes:
       - task-db-data:/var/lib/postgresql/data
 
