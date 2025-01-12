@@ -30,9 +30,9 @@ export class TaskService {
       return this.prisma.task.findMany({
         where: { dueDate: { gte: startOfToday, lt: endOfWeek } },
       });
+    } else {
+      return this.prisma.task.findMany();
     }
-
-    return [];
   }
 
   async addTask(

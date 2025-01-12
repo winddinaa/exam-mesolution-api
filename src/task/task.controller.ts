@@ -7,7 +7,7 @@ export class TaskController {
   constructor(private readonly taskService: TaskService) {}
 
   @Get()
-  getTasks(@Query('filter') filter: 'today' | 'tomorrow' | 'week') {
+  getTasks(@Query('filter') filter?: 'today' | 'tomorrow' | 'week') {
     return this.taskService.getTasks(filter);
   }
 

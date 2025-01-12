@@ -5,9 +5,9 @@ services:
     container_name: task-api-db
     restart: always
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: admin
-      POSTGRES_DB: taskdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: me_solution_task
     ports:
       - '5432:5432'
     volumes:
